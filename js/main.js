@@ -5,18 +5,24 @@
 // /_/ /_/ /_/\__,_/_/_/ /_/
 "use strict";
 
-// prefer vanilla js over jQuery bollocks
 document.addEventListener("DOMContentLoaded", function() {
-  // gridstack
-  var options = {
-    cell_height: 80,
-    vertical_margin: 10
-  };
-  $('.grid-stack').gridstack(options);
-  // end gridstack
+  // packery (docs: http://packery.metafizzy.co/draggable.html)
+  // init grid
+  var $grid = $('.grid').packery({
+    itemSelector: '.grid-item',
+    columnWidth: 100
+  });
+
+  // make items draggable
+  $grid.find('.grid-item').each(function(i, gridItem) {
+    var draggie = new Draggabilly(gridItem);
+    // bind drag events to Packery
+    $grid.packery('bindDraggabillyEvents', draggie);
+  });
+  // end packery
 
   // highcharts
-  $('#container').highcharts({
+  $('#dummy-chart-one').highcharts({
     title: {
       text: 'Monthly Average Temperature',
       x: -20 //center
@@ -63,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }]
   });
 
-  $('#containerOne').highcharts({
+  $('#dummy-chart-two').highcharts({
     title: {
       text: 'Monthly Average Temperature',
       x: -20 //center
