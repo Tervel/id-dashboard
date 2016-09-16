@@ -24,9 +24,11 @@
 
     <!-- css -->
     <!-- n.b. using bootstrap 4 alpha, make sure you use the right docs-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.css" integrity="sha384-mMG3CP9nPLZ1JW4y6ikjxNX15A0nEt+JQkm/LL6QtYxyXdUV6HG530PFmcJw7cpU" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/gridstack.js/0.2.6/gridstack.css" integrity="sha256-vTeglQsjvTQiyaKN+fMHhRHVRus+dPFA/qK2/WJcoDE=" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- template: https://bootswatch.com/sandstone/ -->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.css" integrity="sha384-mMG3CP9nPLZ1JW4y6ikjxNX15A0nEt+JQkm/LL6QtYxyXdUV6HG530PFmcJw7cpU" crossorigin="anonymous">-->
+    <!--<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/gridstack.js/0.2.6/gridstack.css" integrity="sha256-vTeglQsjvTQiyaKN+fMHhRHVRus+dPFA/qK2/WJcoDE=" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://bootswatch.com/sandstone/bootstrap.css" integrity="sha384-TJZxmC1Kv46239uu6/Hh7WiLpUMvw2pVxasdxtjRsuVNZN/iLMYCKnGJGu7R7F3M" crossorigin="anonymous">
+    <!--<link rel="stylesheet" type="text/css" href="css/styles.css">-->
     
     
     <!-- {{content-for "head-footer"}} -->
@@ -36,28 +38,37 @@
   <body>
     <!-- {{content-for "body"}} -->
 
-    <div id="navbar"></div>
-
-    <div class="grid">
-      <div class="grid-item">
-        <div id="dummy-chart-one"></div>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          TODO: fill
+          <a href="../" class="navbar-brand"></a>
+        </div>
       </div>
-      <div class="grid-item">
-        <div id="dummy-chart-two" style="height: 100%"></div>
-      </div>
-      <div class="grid-item">
-        <div class="card" id="table-blacklist">
-          <h2>Blacklist</h2>
-          <table class="table table-striped">
-            <tr>
-              <th>IP Address</th>
-              <th>Reason for Blacklist</th>
-            </tr>
-            <tr>
-              <td>192.168.0.1</td>
-              <td>bad</td>
-            </tr>
-          </table>
+    </div>
+    
+    <div class="container">
+      <div class="grid">
+        <div class="grid-item">
+          <div id="dummy-chart-one"></div>
+        </div>
+        <div class="grid-item">
+          <div id="dummy-chart-two"></div>
+        </div>
+        <div class="grid-item">
+          <div class="card" id="table-blacklist">
+            <h2>Blacklist</h2>
+            <table class="table table-striped">
+              <tr>
+                <th>IP Address</th>
+                <th>Reason for Blacklist</th>
+              </tr>
+              <tr>
+                <td>192.168.0.1</td>
+                <td>bad</td>
+              </tr>
+            </table>
+          </div>
         </div>
       </div>
     </div>
