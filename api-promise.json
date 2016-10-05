@@ -1,0 +1,23 @@
+/*
+  velocity ->
+    ip -> string
+    user -> string
+    access_times -> [int, int, ...] // human readable eventually, parse to epoch?
+    access_velocity -> int // takes n, where n is number of minutes to count access attempts for
+    region -> string
+*/
+
+[
+  {
+    "ip": "77.123.345.23",
+    "user": "foo",
+    "access_times":
+      [
+        1475651859,
+        1475541859,
+        1475431859
+      ],
+    "access_velocity": 5,
+    "region": "AUS"
+  }
+]
