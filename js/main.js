@@ -252,7 +252,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // ajax
   $.ajax({
-    url: "http://mockbin.org/bin/de39a8c3-c40c-4075-bb9f-709fa38a0a35/",
+    url: "https://mockbin.org/bin/de39a8c3-c40c-4075-bb9f-709fa38a0a35/",
     type: "POST",
     crossDomain: true,
     dataType: "json",
