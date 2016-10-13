@@ -20,17 +20,20 @@
     <script type="text/javascript" src="https://unpkg.com/packery@2.1.1/dist/packery.pkgd.js" integrity="sha384-ShuOIEzlEBmZXLK8UYSrl0Wn3iNQhwNh1If1giNrVaJGigt+7r+1L8ijgikoejxx" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://npmcdn.com/draggabilly@2.1.1/dist/draggabilly.pkgd.js" integrity="sha384-f9tjCStnARbi38UPYSMALgtthL2l6iiDM0RMxAOmB+CAZRLq27Xk7CTzRjG23K8D" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/4.2.6/modules/exporting.js" integrity="sha256-0N68f1kJ7Izp3xjhdAGOvoDnXmWwcnmk2WxhlGw6+Wo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Dynatable/0.3.1/jquery.dynatable.js" integrity="sha256-HVnEmlhNnXzbzb+hf4jjN18Ypm5UTY1PBGOrNiVL7JA=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/main-compiled.js"></script>
 
     <!-- css -->
     <!-- n.b. using bootstrap 4 alpha, make sure you use the right docs-->
     <!-- template: https://bootswatch.com/sandstone/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" integrity="sha256-7VVaJ5GDwFQiLIc+eNksQLUSSY5JNZtqv9o2BI8UGYg=" crossorigin="anonymous" />
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.css" integrity="sha384-mMG3CP9nPLZ1JW4y6ikjxNX15A0nEt+JQkm/LL6QtYxyXdUV6HG530PFmcJw7cpU" crossorigin="anonymous">-->
     <!--<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/gridstack.js/0.2.6/gridstack.css" integrity="sha256-vTeglQsjvTQiyaKN+fMHhRHVRus+dPFA/qK2/WJcoDE=" crossorigin="anonymous">-->
     <link rel="stylesheet" href="https://bootswatch.com/sandstone/bootstrap.css" integrity="sha384-TJZxmC1Kv46239uu6/Hh7WiLpUMvw2pVxasdxtjRsuVNZN/iLMYCKnGJGu7R7F3M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Dynatable/0.3.1/jquery.dynatable.css" integrity="sha256-9ziAQIdy127SzObsvXr4BUtKwD8uHktDmTTTjAfs5ZM=" crossorigin="anonymous">
     <!--<link rel="stylesheet" type="text/css" href="css/styles.css">-->
-    
-    
+
+
     <!-- {{content-for "head-footer"}} -->
 
   </head>
@@ -38,40 +41,58 @@
   <body>
     <!-- {{content-for "body"}} -->
 
-    <div class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          TODO: fill
-          <a href="../" class="navbar-brand"></a>
-        </div>
-      </div>
-    </div>
-    
-    <div class="container">
+    <!--<div class="container">-->
       <div class="grid">
+        <!--<div class="grid-item">-->
+          <!--<div id="dummy-chart-one"></div>-->
+        <!--</div>-->
+
+        <!--<div class="grid-item">-->
+          <!--<div id="dummy-chart-two"></div>-->
+        <!--</div>-->
+
+        <!--<div class="grid-item">-->
+          <!--<div class="card" id="table-blacklist">-->
+            <!--<h2>Blacklist</h2>-->
+            <!--<table class="table table-striped">-->
+              <!--<tr>-->
+                <!--<th>IP Address</th>-->
+                <!--<th>Reason for Blacklist</th>-->
+              <!--</tr>-->
+              <!--<tr>-->
+                <!--<td>192.168.0.1</td>-->
+                <!--<td>bad</td>-->
+              <!--</tr>-->
+            <!--</table>-->
+          <!--</div>-->
+        <!--</div>-->
+
         <div class="grid-item">
-          <div id="dummy-chart-one"></div>
+          <div id="panel-timeline"></div>
         </div>
+
         <div class="grid-item">
-          <div id="dummy-chart-two"></div>
+          <div id="panel-pieChart"></div>
         </div>
+
         <div class="grid-item">
-          <div class="card" id="table-blacklist">
-            <h2>Blacklist</h2>
-            <table class="table table-striped">
-              <tr>
-                <th>IP Address</th>
-                <th>Reason for Blacklist</th>
-              </tr>
-              <tr>
-                <td>192.168.0.1</td>
-                <td>bad</td>
-              </tr>
-            </table>
-          </div>
+          <table id="my-final-table" class="table table-bordered">
+            <thead>
+            <th class="dynatable-head">ip</th>
+            <th>user</th>
+            <th>access_times</th>
+            <th>access_velocity</th>
+            <th>region</th>
+            <th>score</th>
+            <th>signals</th>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
         </div>
+
       </div>
-    </div>
+    <!--</div>-->
 
 
     <!-- {{content-for "body-footer"}} -->
