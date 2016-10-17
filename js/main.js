@@ -197,20 +197,7 @@ let jsonData =
     }
   ];
 
-let summaryData =
-    {
-      "green": jsonData.filter(_ => _.score <= amberAlert).length,
-      "amber": jsonData.filter(_ => (_.score >= amberAlert && _.score <= redAlert)).length,
-      "red": jsonData.filter(_ => _.score >= redAlert).length
-    };
-
-let summaryDataPercentage =
-  {
-    "green": summaryData.green / jsonData.length * 100.0,
-    "amber": summaryData.amber / jsonData.length * 100.0,
-    "red": summaryData.red / jsonData.length * 100.0,
-  };
-
+// Formats data for use in pie chart
 function summariseData(data) {
   let summaryData =
   {
@@ -229,35 +216,8 @@ function summariseData(data) {
   return summaryDataPercentage;
 }
 
-// let summaryData = jsonData.filter(_ => _.score <= amberAlert).length;
-
-console.log(summaryData);
-console.log(summaryDataPercentage);
-
-document.addEventListener("DOMContentLoaded", function() {
-  // packery (docs: http://packery.metafizzy.co/draggable.html)
-  // init grid
-  let $grid = $('.grid').packery({
-    itemSelector: '.grid-item',
-    columnWidth: 100
-  });
-
-  // make items draggable
-  $grid.find('.grid-item').each(function(i, gridItem) {
-    var draggie = new Draggabilly(gridItem);
-    // bind drag events to Packery
-    $grid.packery('bindDraggabillyEvents', draggie);
-  });
-  // end packery
-
-  // ajax
-  $.ajax({
-    url: "https://mockbin.org/bin/de39a8c3-c40c-4075-bb9f-709fa38a0a35/",
-    type: "POST",
-    crossDomain: true,
-    dataType: "json",
-    success: function (response) {
-      let summarisedData = summariseData(response);
+function renderCharts(data) {
+      let summarisedData = summariseData(data);
 
       Highcharts.setOptions({
         colors: ['#f24d4d', '#efbc3b', '#57b230']
@@ -304,6 +264,32 @@ document.addEventListener("DOMContentLoaded", function() {
           }]
         }]
       });
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  // packery (docs: http://packery.metafizzy.co/draggable.html)
+  // init grid
+  let $grid = $('.grid').packery({
+    itemSelector: '.grid-item',
+    columnWidth: 25
+  });
+
+  // make items draggable
+  $grid.find('.grid-item').each(function(i, gridItem) {
+    var draggie = new Draggabilly(gridItem);
+    // bind drag events to Packery
+    $grid.packery('bindDraggabillyEvents', draggie);
+  });
+  // end packery
+
+  // ajax
+  $.ajax({
+    url: "https://mockbin.org/bin/de39a8c3-c40c-4075-bb9f-709fa38a0a35/",
+    type: "POST",
+    crossDomain: true,
+    dataType: "json",
+    success: function (response) {
+      renderCharts(response);
     },
     error: function (xhr, status) {
       alert("error");
