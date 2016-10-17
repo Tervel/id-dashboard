@@ -15,15 +15,11 @@ let jsonData =
       "ip": "9.253.237.96",
       "user": "Holland.Lynn",
       "access_times": [
-        147566126,
-        147565742,
-        147569853,
-        147562103,
-        147566980,
-        147568557,
-        147560303,
-        147563769,
-        147562364
+        "2016-01-25T07:30:03 -10:00",
+        "2016-10-11T08:08:32 -10:00",
+        "2015-04-10T09:09:34 -10:00",
+        "2014-05-26T12:35:41 -10:00",
+        "2015-11-17T03:03:51 -10:00"
       ],
       "access_velocity": 8,
       "region": "ER",
@@ -36,16 +32,14 @@ let jsonData =
       "ip": "44.195.245.110",
       "user": "Nixon.Bernard",
       "access_times": [
-        147566485,
-        147565533,
-        147562854,
-        147566697,
-        147564949,
-        147563960,
-        147560111,
-        147568153,
-        147562344,
-        147566346
+        "2015-03-26T10:19:21 -10:00",
+        "2014-01-06T07:56:20 -10:00",
+        "2016-07-23T03:14:33 -10:00",
+        "2014-06-09T06:58:45 -10:00",
+        "2016-01-22T05:52:04 -10:00",
+        "2014-09-19T07:22:41 -10:00",
+        "2016-08-16T10:23:51 -10:00",
+        "2015-08-30T11:28:12 -10:00"
       ],
       "access_velocity": 2,
       "region": "AU",
@@ -58,12 +52,9 @@ let jsonData =
       "ip": "47.6.152.181",
       "user": "Suzette.Estrada",
       "access_times": [
-        147563064,
-        147566090,
-        147562242,
-        147564863,
-        147564575,
-        147563899
+        "2014-01-06T08:26:19 -10:00",
+        "2014-04-14T03:44:15 -10:00",
+        "2016-04-17T11:00:57 -10:00"
       ],
       "access_velocity": 3,
       "region": "SE",
@@ -78,8 +69,16 @@ let jsonData =
       "ip": "103.150.169.208",
       "user": "Goldie.Wynn",
       "access_times": [
-        147564603,
-        147564044
+        "2014-11-26T12:46:53 -10:00",
+        "2016-02-04T09:26:03 -10:00",
+        "2015-09-19T05:40:48 -10:00",
+        "2016-08-23T04:05:31 -10:00",
+        "2015-09-18T02:39:16 -10:00",
+        "2015-11-08T02:42:40 -10:00",
+        "2015-04-27T11:25:33 -10:00",
+        "2016-05-31T04:14:45 -10:00",
+        "2016-03-13T03:28:51 -10:00",
+        "2016-10-06T11:25:07 -10:00"
       ],
       "access_velocity": 8,
       "region": "TF",
@@ -92,9 +91,9 @@ let jsonData =
       "ip": "139.127.15.77",
       "user": "Bartlett.Bishop",
       "access_times": [
-        147566445,
-        147561270,
-        147569459
+        "2014-11-21T10:32:33 -10:00",
+        "2016-01-06T07:40:14 -10:00",
+        "2016-01-16T09:36:58 -10:00"
       ],
       "access_velocity": 1,
       "region": "GD",
@@ -108,10 +107,15 @@ let jsonData =
       "ip": "54.123.244.220",
       "user": "Sharp.Downs",
       "access_times": [
-        147563742,
-        147562447,
-        147569965,
-        147566117
+        "2016-07-06T03:36:55 -10:00",
+        "2016-05-08T02:09:28 -10:00",
+        "2015-07-29T02:44:22 -10:00",
+        "2014-05-31T04:14:55 -10:00",
+        "2016-06-21T09:37:08 -10:00",
+        "2016-01-31T07:01:43 -10:00",
+        "2015-06-03T09:00:34 -10:00",
+        "2015-03-13T08:13:23 -10:00",
+        "2015-07-04T08:14:34 -10:00"
       ],
       "access_velocity": 8,
       "region": "LV",
@@ -126,12 +130,12 @@ let jsonData =
       "ip": "201.122.193.179",
       "user": "Lilia.Craig",
       "access_times": [
-        147568698,
-        147561989,
-        147561055,
-        147569589,
-        147568779,
-        147562341
+        "2016-02-29T07:13:52 -10:00",
+        "2016-03-14T09:56:01 -10:00",
+        "2015-05-15T01:54:35 -10:00",
+        "2014-02-17T06:13:53 -10:00",
+        "2014-02-17T02:43:05 -10:00",
+        "2014-07-31T01:53:54 -10:00"
       ],
       "access_velocity": 3,
       "region": "HN",
@@ -144,14 +148,9 @@ let jsonData =
       "ip": "21.130.215.162",
       "user": "Allyson.Arnold",
       "access_times": [
-        147568544,
-        147569490,
-        147565242,
-        147569792,
-        147569457,
-        147562177,
-        147563588,
-        147569977
+        "2014-04-14T06:50:08 -10:00",
+        "2014-09-12T12:59:12 -10:00",
+        "2016-03-30T10:59:28 -10:00"
       ],
       "access_velocity": 6,
       "region": "ES",
@@ -165,11 +164,8 @@ let jsonData =
       "ip": "252.61.173.84",
       "user": "Ellen.Roy",
       "access_times": [
-        147563687,
-        147564303,
-        147569354,
-        147566950,
-        147562449
+        "2015-12-02T06:33:22 -10:00",
+        "2016-08-22T01:28:43 -10:00"
       ],
       "access_velocity": 1,
       "region": "CU",
@@ -184,8 +180,13 @@ let jsonData =
       "ip": "68.224.152.104",
       "user": "Lauren.Carney",
       "access_times": [
-        147564565,
-        147562554
+        "2015-10-16T11:11:47 -10:00",
+        "2014-06-28T05:52:39 -10:00",
+        "2015-09-17T04:27:01 -10:00",
+        "2016-06-28T01:26:13 -10:00",
+        "2014-10-27T04:54:31 -10:00",
+        "2015-02-28T01:35:18 -10:00",
+        "2016-08-05T03:21:30 -10:00"
       ],
       "access_velocity": 3,
       "region": "MR",
@@ -196,6 +197,9 @@ let jsonData =
       ]
     }
   ];
+
+// whitelist: https://mockbin.org/bin/71b4d9a4-29dc-4ad0-8750-3a43614e3e3c/
+// blacklist: https://mockbin.org/bin/d8c37671-f45f-46d5-b2dd-f56043519ddf/
 
 // Formats data for use in pie chart
 function summariseData(data) {
@@ -266,6 +270,14 @@ function renderCharts(data) {
       });
 }
 
+function renderTable(tableName, data) {
+  $(tableName).dynatable({
+    dataset: {
+      records: data
+    }
+  });
+}
+
 document.addEventListener("DOMContentLoaded", function() {
   // packery (docs: http://packery.metafizzy.co/draggable.html)
   // init grid
@@ -282,7 +294,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
   // end packery
 
-  // ajax
+  // ajax for piechart
   $.ajax({
     url: "https://mockbin.org/bin/de39a8c3-c40c-4075-bb9f-709fa38a0a35/",
     type: "POST",
@@ -290,6 +302,36 @@ document.addEventListener("DOMContentLoaded", function() {
     dataType: "json",
     success: function (response) {
       renderCharts(response);
+    },
+    error: function (xhr, status) {
+      alert("error");
+    }
+  });
+  // end ajax
+
+  // ajax for whitelist
+  $.ajax({
+    url: "https://mockbin.org/bin/71b4d9a4-29dc-4ad0-8750-3a43614e3e3c/",
+    type: "POST",
+    crossDomain: true,
+    dataType: "json",
+    success: function (response) {
+      renderTable('#whitelist-table', response);
+    },
+    error: function (xhr, status) {
+      alert("error");
+    }
+  });
+  // end ajax
+
+  // ajax for blacklist
+  $.ajax({
+    url: "https://mockbin.org/bin/d8c37671-f45f-46d5-b2dd-f56043519ddf/",
+    type: "POST",
+    crossDomain: true,
+    dataType: "json",
+    success: function (response) {
+      renderTable('#blacklist-table', response);
     },
     error: function (xhr, status) {
       alert("error");
