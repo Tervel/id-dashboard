@@ -198,6 +198,7 @@ let jsonData =
     }
   ];
 
+// test json: https://mockbin.org/bin/dc456745-6353-464e-a42f-f6037880bc8c/
 // whitelist: https://mockbin.org/bin/71b4d9a4-29dc-4ad0-8750-3a43614e3e3c/
 // blacklist: https://mockbin.org/bin/d8c37671-f45f-46d5-b2dd-f56043519ddf/
 
