@@ -1,6 +1,7 @@
-* { box-sizing: border-box; } 
-
-body { font-family: sans-serif; }
+/* table colour */
+th, .dynatable-active-page {
+  background: rgba(55, 55, 55, 0.45);
+}
 
 /* ---- grid ---- */
 
@@ -27,30 +28,6 @@ body { font-family: sans-serif; }
   margin: 5px;
 }
 
-.grid-item--width2 { width: 300px; }
-.grid-item--height2 { height: 400px; }
-
-#panel-timeline {
-  width: 800px;
-  height: 400px;
-}
-
-#panel-pieChart {
-  height: 400px;
-  width: 450px;
-  
-}
-
-#panel-summary {
-  height: 400px;
-  width: 600px;
-}
-
-#panel-eventLog {
-  width: 1200px;
-  height: 800px;
-}
-
 .grid-item:hover {
   border-color: #444;
   cursor: move;
@@ -67,5 +44,5 @@ body { font-family: sans-serif; }
   outline: 3px dashed hsla(0, 0%, 0%, 0.5);
   outline-offset: -6px;
   -webkit-transition: -webkit-transform 0.2s;
-          transition: transform 0.2s;
+  transition: transform 0.2s;
 }
