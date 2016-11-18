@@ -3,6 +3,10 @@ th, .dynatable-active-page {
   background: rgba(55, 55, 55, 0.45);
 }
 
+.mdl-color--grey-100 {
+  background-color: rgba(55, 55, 55, 0.45) !important;
+}
+
 /* ---- grid ---- */
 
 .grid {
